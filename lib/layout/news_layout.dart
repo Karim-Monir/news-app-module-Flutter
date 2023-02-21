@@ -18,7 +18,20 @@ class NewsLayout extends StatelessWidget {
             appBar: AppBar(
               title: Text(cubit.titles[cubit.currentIndex]),
               actions: [
-                Icon(Icons.search)
+                IconButton(
+                    onPressed: (){},
+                    icon: Icon(Icons.search),
+                ),
+                SizedBox(
+                  width: 15.0,
+                ),
+                IconButton(
+                    icon: Icon(Icons.dark_mode_rounded),
+                    onPressed: ()
+                    {
+                      cubit.changeMode();
+                    },
+                )
               ],
             ),
             body: cubit.screens[cubit.currentIndex],

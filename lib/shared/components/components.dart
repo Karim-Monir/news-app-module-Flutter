@@ -179,7 +179,7 @@ Widget separator () => Padding(
 );
 
 
-Widget buildNewsItem(article) => Padding(
+Widget buildNewsItem(article, context) => Padding(
   padding: const EdgeInsets.all(20.0),
   child: Row(
     children: [
@@ -209,10 +209,7 @@ Widget buildNewsItem(article) => Padding(
                   '${article['title']}',
                   maxLines: 3,
                   overflow: TextOverflow.ellipsis,
-                  style: TextStyle(
-                    fontSize: 18.0,
-                    fontWeight: FontWeight.w600,
-                  ),
+                  style: Theme.of(context).textTheme.bodyMedium,
                 ),
               ),
               Text(
@@ -236,7 +233,7 @@ Widget buildNewsArticles(list) => ConditionalBuilder(
       ListView.separated(
         physics: BouncingScrollPhysics(),
         itemBuilder: (BuildContext context, int index) =>
-            buildNewsItem(list[index]),
+            buildNewsItem(list[index], context),
         separatorBuilder: (BuildContext context, int index) =>
             separator(),
         itemCount: list.length,

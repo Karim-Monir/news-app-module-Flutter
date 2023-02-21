@@ -1,3 +1,4 @@
+import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 import 'package:flutter/material.dart';
 import '../cubit/cubit.dart';
 
@@ -132,26 +133,16 @@ Widget defaultTextFormField({
       ],
     ),
   ),
-);*/
+);
 
 
-/*
 Widget taskConditionalBuilder({
   required List<Map> tasks
 }) => ConditionalBuilder(
   condition: tasks.isNotEmpty,
   builder: (context) => ListView.separated(
     itemBuilder: (context, index) => buildTaskItem(tasks[index], context),
-    separatorBuilder: (context, index) => Padding(
-      padding: const EdgeInsetsDirectional.only(
-        start: 20.0,
-      ),
-      child: Container(
-        height: 1.0,
-        color: Colors.grey[300],
-        width: double.infinity,
-      ),
-    ),
+    separatorBuilder: (context, index) => separator(),
     itemCount: tasks.length,
   ),
   fallback: (context) => Center(
@@ -175,3 +166,80 @@ Widget taskConditionalBuilder({
     ),
   ),
 );*/
+
+Widget separator () => Padding(
+  padding: const EdgeInsetsDirectional.only(
+    start: 20.0,
+  ),
+  child: Container(
+    height: 1.0,
+    color: Colors.grey[300],
+    width: double.infinity,
+  ),
+);
+
+
+Widget buildNewsItem(article) => Padding(
+  padding: const EdgeInsets.all(20.0),
+  child: Row(
+    children: [
+      Container(
+        width: 120.0,
+        height: 120.0,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(15.0),
+          image: DecorationImage(
+            image: NetworkImage('${article['urlToImage']}'),
+            fit: BoxFit.cover,
+          ),
+        ),
+      ),
+      SizedBox(
+        width: 20.0,
+      ),
+      Expanded(
+        child: Container(
+          height: 120.0,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: Text(
+                  '${article['title']}',
+                  maxLines: 3,
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(
+                    fontSize: 18.0,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
+              Text(
+                '${article['publishedAt']}',
+                style: TextStyle(
+                  color: Colors.grey,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    ],
+  ),
+);
+
+
+Widget buildNewsArticles(list) => ConditionalBuilder(
+  condition: list.length > 0,
+  builder: (context) =>
+      ListView.separated(
+        physics: BouncingScrollPhysics(),
+        itemBuilder: (BuildContext context, int index) =>
+            buildNewsItem(list[index]),
+        separatorBuilder: (BuildContext context, int index) =>
+            separator(),
+        itemCount: list.length,
+      ),
+  fallback: (context) => Center(child: CircularProgressIndicator()),
+);

@@ -1,0 +1,302 @@
+//https://newsapi.org/v2/top-headlines?country=eg&apiKey=64392a2842fe4648b0de32eda438e63c
+
+{
+  "status": "ok",
+  "totalResults": 34,
+  "articles": [
+    {
+      "source": {
+        "id": null,
+        "name": "Skynewsarabia.com"
+      },
+      "author": "سكاي نيوز عربية",
+      "title": "بالفيديو.. لحظة ضرب الزلزال ولاية هاتاي التركية - Sky News Arabia سكاي نيوز عربية",
+      "description": "نشرت وكالة الأناضول التركية اللحظات المروعة الأولى، التي ضرب فيها الزلزال ولاية هاتاي التركية مساء الاثنين.",
+      "url": "https://www.skynewsarabia.com/world/1599043-%D8%A8%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D9%84%D8%AD%D8%B8%D8%A9-%D8%B6%D8%B1%D8%A8-%D8%A7%D9%84%D8%B2%D9%84%D8%B2%D8%A7%D9%84-%D9%88%D9%84%D8%A7%D9%8A%D8%A9-%D9%87%D8%A7%D8%AA%D8%A7%D9%8A-%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A9",
+      "urlToImage": "https://www.skynewsarabia.com/images/v1/2023/02/20/1599042/1200/630/1-1599042.jpg",
+      "publishedAt": "2023-02-20T17:55:20Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Filgoal.com"
+      },
+      "author": "<a href='https://www.filgoal.com/editor/details/106559'>FilGoal</a>",
+      "title": "مباشر الدوري الدنماركي - فيبورج (0) (1) ميتيلاند.. جووووووووووووووول إماااااام عااااااشور - FilGoal.com",
+      "description": "يحل ميتيلاند ضيفا على فيبورج في الدوري الدنماركي بمشاركة إمام عاشور.",
+      "url": "https://www.filgoal.com/articles/457247",
+      "urlToImage": "https://media.filgoal.com/news/verylarge/318364_0.jpg",
+      "publishedAt": "2023-02-20T17:52:00Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Masrawy.com"
+      },
+      "author": "مصراوي",
+      "title": "رئيس معهد الفلك يوجه رسالة عاجلة للمصريين: لم نرصد زلازل في مصر اليوم - Masrawy - مصراوي",
+      "description": "رئيس معهد الفلك يوجه رسالة عاجلة للمصريين لم نرصد زلازل في مصر اليوم | مصراوى",
+      "url": "https://www.masrawy.com/news/news_egypt/details/2023/2/20/2373454/رئيس-معهد-الفلك-يوجه-رسالة-عاجلة-للمصريين-لم-نرصد-زلازل-في-مصر-اليوم",
+      "urlToImage": "https://media.gemini.media/img/large/2023/2/20/2023_2_20_19_42_10_855.jpg",
+      "publishedAt": "2023-02-20T17:42:00Z",
+      "content": "- :\r\n .\r\n .\r\n 6.3 .\r\n .\r\n .. ()\r\n ..\r\n 6.3"
+    },
+
+    {
+
+      "source": {
+        "id": null,
+        "name": "Yallakora.com"
+      },
+      "author": "إبراهيم علي",
+      "title": "\"فأل حسن\" ينتظر ليفربول في مواجهة ريال مدريد بدوري أبطال أوروبا (فيديو) - Yallakora - يلاكورة",
+      "description": "يستعد نادي ليفربول الإنجليزي لمواجهة نظيره ريال مدريد الإسباني، مساء الثلاثاء، في ذهاب دور الـ16 بدوري أبطال أوروبا.",
+      "url": "https://www.yallakora.com/uefa/2783/news/441048/-فأل-حسن-ينتظر-ليفربول-في-مواجهة-ريال-مدريد-بدوري-أبطال-أوروبا-فيديو-",
+      "urlToImage": "https://media.gemini.media/img/yallakora/Normal/\\2023\\2\\20\\capture2023_2_20_17_40.jpg",
+      "publishedAt": "2023-02-20T15:44:00Z",
+      "content": ""
+    },
+
+    {
+
+      "source": {
+        "id": null,
+        "name": "Skynewsarabia.com"
+      },
+      "author": "سكاي نيوز عربية",
+      "title": "حصريا لهواتف آيفون.. ميزة مهمة جديدة من \"واتساب\" - Sky News Arabia سكاي نيوز عربية",
+      "description": "طرح تطبيق التراسل الفوري \"واتساب\"، ميزة جديدة تتيح لمستخدمي هواتف \"آيفون\" أن يواصلوا مكالمات الفيديو، بينما يجرون أمورا أخرى على جهازهم، وهو أمر طالما انتظرته الشركات، لأن يتيح القيام بأشياء عدة في الوقت نفسه.",
+      "url": "https://www.skynewsarabia.com/technology/1599001-%D8%AD%D8%B5%D8%B1%D9%8A%D8%A7-%D9%84%D9%87%D9%88%D8%A7%D8%AA%D9%81-%D8%A7%D9%93%D9%8A%D9%81%D9%88%D9%86-%D9%85%D9%8A%D8%B2%D8%A9-%D9%85%D9%87%D9%85%D8%A9-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%88%D8%A7%D8%AA%D8%B3%D8%A7%D8%A8",
+      "urlToImage": "https://www.skynewsarabia.com/images/v1/2022/11/16/1572150/1200/630/1-1572150.jpg",
+      "publishedAt": "2023-02-20T15:13:14Z",
+      "content": null
+    },
+
+    {
+
+      "source": {
+        "id": null,
+        "name": "Skynewsarabia.com"
+      },
+      "author": "سكاي نيوز عربية",
+      "title": "ارتفاع عدد ضحايا زلزال شرق المتوسط.. وتسجيل آلاف الهزات - Sky News Arabia سكاي نيوز عربية",
+      "description": "رفعت وكالة إدارة الكوارث التركية، اليوم الإثنين، عدد الوفيات المؤكدة جراء الزلزال الذي ضرب تركيا إلى 41156.",
+      "url": "https://www.skynewsarabia.com/world/1598992-%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-%D8%B9%D8%AF%D8%AF-%D8%B6%D8%AD%D8%A7%D9%8A%D8%A7-%D8%B2%D9%84%D8%B2%D8%A7%D9%84-%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D9%85%D8%AA%D9%88%D8%B3%D8%B7-%D9%88%D8%AA%D8%B3%D8%AC%D9%8A%D9%84-%D8%A7%D9%93%D9%84%D8%A7%D9%81-%D8%A7%D9%84%D9%87%D8%B2%D8%A7%D8%AA",
+      "urlToImage": "https://www.skynewsarabia.com/images/v1/2023/02/20/1598897/1200/630/1-1598897.jpg",
+      "publishedAt": "2023-02-20T14:23:55Z",
+      "content": null
+    },
+
+    {
+
+      "source": {
+        "id": null,
+        "name": "Skynewsarabia.com"
+      },
+      "author": "سكاي نيوز عربية",
+      "title": "دمار واسع.. فيديو للفيضانات والانهيارات الأرضية في البرازيل - Sky News Arabia سكاي نيوز عربية",
+      "description": "تسببت الأمطار الغزيرة في فيضانات وانهيارات أرضية، خلفت 36 قتيلا في ولاية ساو باولو شمالي البرازيل، وقد يرتفع عدد القتلى، حسبما أفاد مسؤولون.",
+      "url": "https://www.skynewsarabia.com/world/1598981-%D8%AF%D9%85%D8%A7%D8%B1-%D9%88%D8%A7%D8%B3%D8%B9-%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D9%84%D9%84%D9%81%D9%8A%D8%B6%D8%A7%D9%86%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D8%A7%D9%86%D9%87%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D9%94%D8%B1%D8%B6%D9%8A%D8%A9-%D8%A7%D9%84%D8%A8%D8%B1%D8%A7%D8%B2%D9%8A%D9%84",
+      "urlToImage": "https://www.skynewsarabia.com/images/v1/2023/02/20/1598980/1200/630/1-1598980.jpg",
+      "publishedAt": "2023-02-20T14:02:09Z",
+      "content": null
+    },
+
+    {
+
+      "source": {
+        "id": null,
+        "name": "Almasryalyoum.com"
+      },
+      "author": null,
+      "title": "انفراجة جديدة.. انخفاض سعر الفراخ اليوم الاثنين 20 فبراير خلال منتصف التعاملات في البورصة - Al Masry Al Youm - المصري اليوم",
+      "description": null,
+      "url": "https://www.almasryalyoum.com/news/details/2823681",
+      "urlToImage": null,
+      "publishedAt": "2023-02-20T14:01:00Z",
+      "content": null
+    },
+
+    {
+
+      "source": {
+        "id": null,
+        "name": "Skynewsarabia.com"
+      },
+      "author": "سكاي نيوز عربية",
+      "title": "رسميا.. كشف حقيقة الهزة الأرضية في مصر - Sky News Arabia سكاي نيوز عربية",
+      "description": "كشف قسم الزلازل بالمعهد القومي للبحوث الفلكية والجيوفيزيقية في مصر، حقيقة حدوث هزة أرضية في البلاد، الإثنين.",
+      "url": "https://www.skynewsarabia.com/middle-east/1598960-%D8%B1%D8%B3%D9%85%D9%8A%D8%A7-%D9%83%D8%B4%D9%81-%D8%AD%D9%82%D9%8A%D9%82%D8%A9-%D8%A7%D9%84%D9%87%D8%B2%D8%A9-%D8%A7%D9%84%D8%A7%D9%94%D8%B1%D8%B6%D9%8A%D8%A9-%D9%85%D8%B5%D8%B1",
+      "urlToImage": "https://www.skynewsarabia.com/images/v1/2023/01/15/1588925/1200/630/1-1588925.jpg",
+      "publishedAt": "2023-02-20T12:58:18Z",
+      "content": null
+    },
+
+    {
+
+      "source": {
+        "id": null,
+        "name": "Almasryalyoum.com"
+      },
+      "author": null,
+      "title": "رئيس شعبة الأرز: مفاجأة في سعر كيلو الأرز عقب تحرير سعره - Al Masry Al Youm - المصري اليوم",
+      "description": null,
+      "url": "https://www.almasryalyoum.com/news/details/2823547",
+      "urlToImage": null,
+      "publishedAt": "2023-02-20T12:48:00Z",
+      "content": null
+    },
+
+    {
+
+      "source": {
+        "id": null,
+        "name": "Youm7.com"
+      },
+      "author": null,
+      "title": "الأهلى فى شكوى للكاف: تجاوزات الهلال السوداني وجماهيره متكررة وننتظر تطبيق اللوائح - اليوم السابع",
+      "description": "تقدم النادي الأهلى صباح اليوم بشكوى للاتحاد الأفريقي لكرة القدم ضد نادي الهلال السوداني؛ بسبب ما تعرض له فريق الأهلي من اعتداءات وتجاوزات.",
+      "url": "https://www.youm7.com/story/2023/2/20/الأهلى-فى-شكوى-للكاف-تجاوزات-الهلال-السوداني-وجماهيره-متكررة-وننتظر/6090488",
+      "urlToImage": "https://img.youm7.com/large/202302110634513451.jpg",
+      "publishedAt": "2023-02-20T12:45:00Z",
+      "content": null
+    },
+
+    {
+
+      "source": {
+        "id": null,
+        "name": "Skynewsarabia.com"
+      },
+      "author": "سكاي نيوز عربية",
+      "title": "لا تتجاهلها.. عادات تجعل رحلة تخفيف الوزن شاقة للغاية - Sky News Arabia سكاي نيوز عربية",
+      "description": "يكافح الكثر في رحلة تخفيف الوزن لتحقيق الأهداف التي ترضيهم، فيما يصفه البعض بأكثر المهام الصحية الشاقة على الإطلاق.",
+      "url": "https://www.skynewsarabia.com/technology/1598821-%D8%AA%D8%AA%D8%AC%D8%A7%D9%87%D9%84%D9%87%D8%A7-%D8%B9%D8%A7%D8%AF%D8%A7%D8%AA-%D8%AA%D8%AC%D8%B9%D9%84-%D8%B1%D8%AD%D9%84%D8%A9-%D8%AA%D8%AE%D9%81%D9%8A%D9%81-%D8%A7%D9%84%D9%88%D8%B2%D9%86-%D8%B4%D8%A7%D9%82%D8%A9-%D9%84%D9%84%D8%BA%D8%A7%D9%8A%D8%A9",
+      "urlToImage": "https://www.skynewsarabia.com/images/v1/2023/02/20/1598819/1200/630/1-1598819.jpeg",
+      "publishedAt": "2023-02-20T12:44:43Z",
+      "content": null
+    },
+
+    {
+
+      "source": {
+        "id": null,
+        "name": "Alkhaleej365.co"
+      },
+      "author": "سعد محمود",
+      "title": "بفيديو فاضح جديد .. شمس الكويتية هتوريك الرقص البلدي على اصوله .. غلبت صافيناز و سما المصري - الخليج 365",
+      "description": "بفيديو فاضح جديد .. شمس الكويتية هتوريك الرقص البلدي على اصوله .. غلبت صافيناز و سما المصري",
+      "url": "https://alkhaleej365.co/alymn-news/11911898/%D8%A8%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D9%81%D8%A7%D8%B6%D8%AD-%D8%AC%D8%AF%D9%8A%D8%AF--%D8%B4%D9%85%D8%B3-%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA%D9%8A%D8%A9-%D9%87%D8%AA%D9%88%D8%B1%D9%8A%D9%83-%D8%A7%D9%84%D8%B1%D9%82%D8%B5-%D8%A7%D9%84%D8%A8%D9%84%D8%AF%D9%8A-%D8%B9%D9%84%D9%89-%D8%A7%D8%B5%D9%88%D9%84%D9%87--%D8%BA%D9%84%D8%A8%D8%AA-%D8%B5%D8%A7%D9%81%D9%8A%D9%86%D8%A7%D8%B2-%D9%88-%D8%B3%D9%85%D8%A7-%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A.html",
+      "urlToImage": "https://alkhaleej365.co/temp/resized/medium_2023-02-20-94b4e37726.jpg",
+      "publishedAt": "2023-02-20T12:09:53Z",
+      "content": "/\r\n.. .. \r\n- -      ( ) .\r\n \" ().\r\n .\r\n    « »  .\r\n( ) “”.\r\n<ul><li>\r\n-\r\n 20 2023 08:21 </li><li>\r\n-\r\n 20 2023 08:21 </li><li>\r\n-\r\n 20 2023 08:21 </li><li>\r\n-\r\n 20 2023 08:21 </li></ul>\r\n\""
+    },
+
+    {
+
+      "source": {
+        "id": null,
+        "name": "Youm7.com"
+      },
+      "author": null,
+      "title": "أسعار الذهب اليوم الإثنين تسجل استقرارا ملحوظا.. وعيار 21 يسجل 1690جنيها للجرام - اليوم السابع",
+      "description": "ننشر آخر تحديث في سعر جرام الذهب اليوم الاثنين مستهل تعاملات الأسبوع، ليسجل جرام الذهب عيار 21 وهو الأكثر رواجاً في سوق الصاغة 1685 جنيها بدون إضافة مصنعية وهو ادني سعر للذهب في 2023.",
+      "url": "https://www.youm7.com/story/2023/2/20/أسعار-الذهب-اليوم-الإثنين-تسجل-استقرارا-ملحوظا-وعيار-21-يسجل/6090298",
+      "urlToImage": "https://img.youm7.com/large/202203220713151315.jpg",
+      "publishedAt": "2023-02-20T11:30:00Z",
+      "content": null
+    },
+
+    {
+
+      "source": {
+        "id": null,
+        "name": "Alarabiya.net"
+      },
+      "author": "العربية",
+      "title": "بايدن: روسيا أرادت إزالة أوكرانيا من الخريطة.. والآن كييف ما زالت صامدة - العربية",
+      "description": "تعهّد الرئيس الأميركي جو بايدن، الاثنين، بتزويد أوكرانيا بأسلحة جديدة، خلال قيامه بزيارة مفاجئة إلى كييف حيث التقى نظيره الأوكراني فولوديمير زيلينسكي، مؤكد",
+      "url": "https://www.alarabiya.net/arab-and-world/2023/02/20/%D8%A8%D8%A7%D9%8A%D8%AF%D9%86-%D8%B1%D9%88%D8%B3%D9%8A%D8%A7-%D8%A3%D8%B1%D8%A7%D8%AF%D8%AA-%D8%A7%D8%B2%D8%A7%D9%84%D8%A9-%D8%A3%D9%88%D9%83%D8%B1%D8%A7%D9%86%D9%8A%D8%A7-%D9%85%D9%86-%D8%A7%D9%84%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D9%88%D8%A7%D9%84%D8%A2%D9%86-%D9%83%D9%8A%D9%8A%D9%81-%D9%85%D8%A7%D8%B2%D8%A7%D9%84%D8%AA-%D8%B5%D8%A7%D9%85%D8%AF%D8%A9",
+      "urlToImage": "https://vid.alarabiya.net/images/2023/02/20/d1b06a0f-7292-45a4-97d8-fcbf26dd3713/d1b06a0f-7292-45a4-97d8-fcbf26dd3713_16x9_600x338.jpg",
+      "publishedAt": "2023-02-20T11:01:00Z",
+      "content": null
+    },
+
+    {
+
+      "source": {
+        "id": null,
+        "name": "Skynewsarabia.com"
+      },
+      "author": "سكاي نيوز عربية",
+      "title": "اختراق علمي يمهد لحل لغز الثقوب السوداء \"المحير\" - Sky News Arabia سكاي نيوز عربية",
+      "description": "ساعدت دراسة حديثة في مجال فيزياء الفلك، على التقريب من فك لغز \"غامض\" و\"محير\" بشأن الثقوب السوداء الموجودة في الكون، فيما يواصل العلماء جهودهم، لأجل معرفة المزيد عنها.",
+      "url": "https://www.skynewsarabia.com/technology/1598863-%D8%A7%D8%AE%D8%AA%D8%B1%D8%A7%D9%82-%D8%B9%D9%84%D9%85%D9%8A-%D9%8A%D9%85%D9%87%D8%AF-%D9%84%D8%AD%D9%84-%D9%84%D8%BA%D8%B2-%D8%A7%D9%84%D8%AB%D9%82%D9%88%D8%A8-%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D8%AD%D9%8A%D8%B1",
+      "urlToImage": "https://www.skynewsarabia.com/images/v1/2023/02/20/1598859/1200/630/1-1598859.PNG",
+      "publishedAt": "2023-02-20T10:35:42Z",
+      "content": null
+    },
+
+    {
+
+      "source": {
+        "id": null,
+        "name": "Alkhaleej-services.net"
+      },
+      "author": "خدمات الخليج",
+      "title": "هاتف Samsung s23 ultra من لولو هايبر السعودية بأرخص الاسعار .. الكمية محدودة - خدمات الخليج",
+      "description": "وفر لك لولو هايبر ماركت هاتف سامسونج s23 الترا فيمكنك من خلال هذا المقال الاطلاع على مواصفات الهاتف ثم الذهاب لشراء الهاتف على الفور قبل نفاذ الكمية.",
+      "url": "https://alkhaleej-services.net/news25227.html",
+      "urlToImage": "https://alkhaleej-services.net/user_images/news/18-02-23-417351136.jpg",
+      "publishedAt": "2023-02-20T10:30:00Z",
+      "content": "Galaxy S23 .\r\n S23 \r\n12 \r\n .. \r\n :\r\n s23 \r\n<ul><li> .</li><li> S pen.</li><li> 5G.</li><li> 233 .</li><li> .</li><li> Dynamic AMOLED 2X.</li><li> .</li><li> 256 .</li><li> 12 .</li><li> .</li><li> 8K… [+341 chars]"
+    },
+
+    {
+
+      "source": {
+        "id": null,
+        "name": "Youm7.com"
+      },
+      "author": null,
+      "title": "الأرصاد: تحسن الأحوال الجوية وزيادة فترات سطوع الشمس والحرارة تتخطى 20 درجة - اليوم السابع",
+      "description": "أكدت هيئة الأرصاد الجوية، على بدء التحسن النسبى فى الأحوال الجوية، حيث تبدأ درجات الحرارة فى الارتفاع لتسود أجواء معتدلة خلال ساعات النهار..",
+      "url": "https://www.youm7.com/story/2023/2/20/الأرصاد-تحسن-الأحوال-الجوية-وزيادة-فترات-سطوع-الشمس-والحرارة-تتخطى/6090213",
+      "urlToImage": "https://img.youm7.com/large/20230206050522522.jpg",
+      "publishedAt": "2023-02-20T10:13:00Z",
+      "content": "20 . \r\n: .\r\n.\r\n  . \r\n.\r\n: 20 11 19 12 17 10 21 08 28 08 28 11 .\r\n21 2022 27 1444 23:48 .\r\n88 23 38 20 2023 28 1444 23:26.\r\n23 27 .\r\n23 ."
+    },
+
+    {
+
+      "source": {
+        "id": null,
+        "name": "Investing.com"
+      },
+      "author": "رويترز",
+      "title": "هبوط أسعار الذهب جراء ارتفاع الدولار ومخاوف من ارتفاع سعر الفائدة بواسطة رويترز - السعودية Investing.com",
+      "description": "أسعار الذهب تصعد مع هبوط الدولار وترقب بيانات اقتصادية أمريكية",
+      "url": "https://sa.investing.com/news/stock-market-news/article-2379164",
+      "urlToImage": "https://i-invdn-com.investing.com/news/LYNXMPED1M0ED_L.jpg",
+      "publishedAt": "2023-02-20T09:40:00Z",
+      "content": "() - ( ).\r\n 0.2 1844.59 () 1135 . 0.2 1853.50 .\r\n .. \" \".\r\n .\r\n .\r\n .\r\n . \r\n 5.3 . \r\n .\r\n 0.1 21.75 0.6 922.29 0.5 1505.44.\r\n . \r\n( - )"
+    },
+
+    {
+
+      "source": {
+        "id": null,
+        "name": "Skynewsarabia.com"
+      },
+      "author": "سكاي نيوز عربية",
+      "title": "رب ضارة نافعة.. الإصابة بالسكري قد تنجيك من \"مرض خطير\" - Sky News Arabia سكاي نيوز عربية",
+      "description": "ينصح الأطباء غالبا باتباع نظام غذائي صحي وممارسة الرياضة لدرء الإصابة بمرض الزهايمر، إلا أن الباحثين توصلوا لاكتشاف جديد مفاده أن أحد أدوية السكري منخفضة القيمة يمكن أن يقلل من خطر الإصابة بالمرض بنسبة تصل إلى 54 بالمئة.",
+      "url": "https://www.skynewsarabia.com/technology/1598809-%D8%B1%D8%A8-%D8%B6%D8%A7%D8%B1%D8%A9-%D9%86%D8%A7%D9%81%D8%B9%D8%A9-%D8%A7%D9%84%D8%A7%D9%95%D8%B5%D8%A7%D8%A8%D8%A9-%D8%A8%D8%A7%D9%84%D8%B3%D9%83%D8%B1%D9%8A-%D8%AA%D9%86%D8%AC%D9%8A%D9%83-%D9%85%D8%B1%D8%B6-%D8%AE%D8%B7%D9%8A%D8%B1",
+      "urlToImage": "https://www.skynewsarabia.com/images/v1/2023/02/20/1598808/1200/630/1-1598808.png",
+      "publishedAt": "2023-02-20T09:38:18Z",
+      "content": null
+    }
+  ]
+}

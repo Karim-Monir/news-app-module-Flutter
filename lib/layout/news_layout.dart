@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import '../shared/cubit/cubit.dart';
 import '../shared/cubit/states.dart';
 
@@ -10,7 +9,7 @@ class NewsLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (BuildContext context) => NewsAppCubit(),
+      create: (BuildContext context) => NewsAppCubit()..getBusinessNews(),
       child: BlocConsumer<NewsAppCubit, NewsAppStates>(
         listener: (BuildContext context, Object? state) {},
         builder: (BuildContext context, state) {
@@ -23,12 +22,6 @@ class NewsLayout extends StatelessWidget {
               ],
             ),
             body: cubit.screens[cubit.currentIndex],
-            floatingActionButton: FloatingActionButton(
-              child: Icon(
-                Icons.add,
-              ),
-              onPressed: (){},
-            ),
             bottomNavigationBar: BottomNavigationBar(
               currentIndex: cubit.currentIndex,
               items: cubit.bottomItems,

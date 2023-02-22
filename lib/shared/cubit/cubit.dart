@@ -4,6 +4,7 @@ import 'package:news_module/modules/science_screen.dart';
 import 'package:news_module/modules/settings_screen.dart';
 import 'package:news_module/modules/sports_screen.dart';
 import 'package:news_module/shared/cubit/states.dart';
+import 'package:news_module/shared/network/local/cache_helper.dart';
 import 'package:news_module/shared/network/remote/dio_helper.dart';
 
 import '../../modules/business_screen.dart';
@@ -150,10 +151,43 @@ class NewsAppCubit extends Cubit<NewsAppStates> {
   }
 
 
+  List<dynamic> search = [];
+
+  void getSearchNews(String value) {
+    emit(AppSearchLoadingState());
+    if(search.length == 0){
+      DioHelper.getData(
+          path: 'v2/everything',
+          queryParameters:
+          {
+            'q' : value,
+            'apiKey' : '64392a2842fe4648b0de32eda438e63c',
+          }
+      ).then((value){
+        search = value?.data['articles'];
+        emit(AppGetSearchNewsSuccessState());
+      }).catchError((error){
+        emit(AppGetSearchNewsErrorState(error.toString()));
+        print(error.toString());
+      });
+    } else {
+      emit(AppGetSearchNewsSuccessState());
+    }
+
+  }
+
   bool isDark = false;
-  void changeMode(){
-    isDark = !isDark;
-    emit(AppModeState());
+  void changeMode({bool? fromShared}){
+    if(fromShared != null){
+      isDark = fromShared;
+      emit(AppModeState());
+
+    } else{
+      isDark = !isDark;
+      CacheHelper.putData(key: 'isDark', value: isDark).then((value){
+        emit(AppModeState());
+      });
+    }
   }
 
 }

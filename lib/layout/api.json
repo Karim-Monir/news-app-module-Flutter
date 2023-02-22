@@ -1,4 +1,5 @@
 //https://newsapi.org/v2/top-headlines?country=eg&apiKey=64392a2842fe4648b0de32eda438e63c
+//https://newsapi.org/v2/top-headlines?q=tesla&apiKey=64392a2842fe4648b0de32eda438e63c
 
 {
   "status": "ok",

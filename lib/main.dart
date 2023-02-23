@@ -18,8 +18,9 @@ void main() async
   DioHelper.init();
   await CacheHelper.init();
   Bloc.observer = MyBlocObserver();
-  bool? isDark = CacheHelper.getData(key: 'isDark');
-  runApp(NewsModule(isDark!));
+  bool isDark = true;
+  //CacheHelper.getData(key: 'isDark');
+  runApp(NewsModule(isDark));
 }
 
 class NewsModule extends StatelessWidget {
@@ -30,8 +31,8 @@ class NewsModule extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(create: (BuildContext context) => NewsAppCubit()..getBusinessNews()),
-        BlocProvider(create: (BuildContext context) => NewsAppCubit()..changeMode(fromShared: isDark,)),
+        //BlocProvider(create: (BuildContext context) => NewsAppCubit()/*..getBusinessNews()..getSportsNews()..getScienceNews()*/),
+        BlocProvider(create: (BuildContext context) => NewsAppCubit()..changeMode(fromShared: isDark,)..getBusinessNews()..getSportsNews()..getScienceNews()),
       ],
         child: BlocConsumer<NewsAppCubit, NewsAppStates>(
           listener: (context, state){},
@@ -43,7 +44,7 @@ class NewsModule extends StatelessWidget {
               theme: ThemeData(
                 primarySwatch: Colors.deepOrange,
                 scaffoldBackgroundColor: Colors.white,
-                appBarTheme: AppBarTheme(
+                appBarTheme: const AppBarTheme(
                   titleTextStyle: TextStyle(
                     color: Colors.black,
                     fontSize: 20.0,
@@ -59,14 +60,14 @@ class NewsModule extends StatelessWidget {
                   backgroundColor: Colors.white,
                   elevation: 0.0,
                 ),
-                bottomNavigationBarTheme: BottomNavigationBarThemeData(
+                bottomNavigationBarTheme: const BottomNavigationBarThemeData(
                   type: BottomNavigationBarType.fixed,
                   selectedItemColor: Colors.deepOrange,
                   elevation: 25.0,
                   backgroundColor: Colors.white,
                   unselectedItemColor: Colors.grey,
                 ),
-                textTheme: TextTheme(
+                textTheme: const TextTheme(
                   bodyMedium: TextStyle(
                     fontSize: 18.0,
                     fontWeight: FontWeight.w600,
@@ -79,12 +80,12 @@ class NewsModule extends StatelessWidget {
                 primarySwatch: Colors.deepOrange,
                 scaffoldBackgroundColor: HexColor('252526'),
                 appBarTheme: AppBarTheme(
-                  titleTextStyle: TextStyle(
+                  titleTextStyle: const TextStyle(
                     color: Colors.white,
                     fontSize: 20.0,
                     fontWeight: FontWeight.bold,
                   ),
-                  iconTheme: IconThemeData(
+                  iconTheme: const IconThemeData(
                     color: Colors.white,
                   ),
                   systemOverlayStyle: SystemUiOverlayStyle(
@@ -101,7 +102,7 @@ class NewsModule extends StatelessWidget {
                   backgroundColor: HexColor('252526'),
                   unselectedItemColor: Colors.grey,
                 ),
-                textTheme: TextTheme(
+                textTheme: const TextTheme(
                   bodyMedium: TextStyle(
                     fontSize: 18.0,
                     fontWeight: FontWeight.w600,

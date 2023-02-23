@@ -100,26 +100,27 @@ class NewsAppCubit extends Cubit<NewsAppStates> {
 
   void getSportsNews() {
     emit(AppSportsNewsLoadingState());
-    if(sports.length == 0){
-      DioHelper.getData(
-          path: 'v2/top-headlines',
-          queryParameters:
-          {
-            'country' : 'eg',
-            'category' : 'sports',
-            'apiKey' : '64392a2842fe4648b0de32eda438e63c',
-          }
-      ).then((value){
-        sports = value?.data['articles'];
-        emit(AppGetSportsNewsSuccessState());
-      }).catchError((error){
-        emit(AppGetSportsNewsErrorState(error.toString()));
-        print(error.toString());
-      });
+    DioHelper.getData(
+        path: 'v2/top-headlines',
+        queryParameters:
+        {
+          'country' : 'eg',
+          'category' : 'sports',
+          'apiKey' : '64392a2842fe4648b0de32eda438e63c',
+        }
+    ).then((value){
+      sports = value?.data['articles'];
+      emit(AppGetSportsNewsSuccessState());
+    }).catchError((error){
+      emit(AppGetSportsNewsErrorState(error.toString()));
+      print(error.toString());
+    });
+    /*if(sports.length == 0){
+
     } else {
       emit(AppGetSportsNewsSuccessState());
 
-    }
+    }*/
 
   }
 
@@ -128,26 +129,27 @@ class NewsAppCubit extends Cubit<NewsAppStates> {
 
   void getScienceNews() {
     emit(AppScienceNewsLoadingState());
-    if(science.length == 0){
-      DioHelper.getData(
-          path: 'v2/top-headlines',
-          queryParameters:
-          {
-            'country' : 'eg',
-            'category' : 'science',
-            'apiKey' : '64392a2842fe4648b0de32eda438e63c',
-          }
-      ).then((value){
-        science = value?.data['articles'];
-        emit(AppGetScienceNewsSuccessState());
-      }).catchError((error){
-        emit(AppGetScienceNewsErrorState(error.toString()));
-        print(error.toString());
-      });
+    DioHelper.getData(
+        path: 'v2/top-headlines',
+        queryParameters:
+        {
+          'country' : 'eg',
+          'category' : 'science',
+          'apiKey' : '64392a2842fe4648b0de32eda438e63c',
+        }
+    ).then((value){
+      science = value?.data['articles'];
+      emit(AppGetScienceNewsSuccessState());
+    }).catchError((error){
+      emit(AppGetScienceNewsErrorState(error.toString()));
+      print(error.toString());
+    });
+    /*if(science.length == 0){
+
     } else {
       emit(AppGetScienceNewsSuccessState());
     }
-
+*/
   }
 
 

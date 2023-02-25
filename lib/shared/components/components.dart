@@ -1,7 +1,6 @@
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 import 'package:flutter/material.dart';
 import 'package:news_module/modules/web_view_screen.dart';
-import '../cubit/cubit.dart';
 
 Widget defaultButton({
   double width = double.infinity,
@@ -22,7 +21,7 @@ Widget defaultButton({
         onPressed: function,
         child: Text(
           isUpperCase ? text.toUpperCase() : text,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.white,
           ),
         ),
@@ -58,7 +57,7 @@ Widget defaultTextFormField({
         suffixIcon: suffix != null
             ? IconButton(onPressed: suffixPressed, icon: Icon(suffix))
             : null,
-        border: OutlineInputBorder(),
+        border: const OutlineInputBorder(),
       ),
     );
 
@@ -182,7 +181,7 @@ Widget separator () => Padding(
 
 Widget buildNewsItem(article, context) => InkWell(
   onTap: (){
-    navigateTo(context, WebViewScreen(article['url']));
+    navigateTo(context, WebViewScreen(articleURL: article['url']));
   },
   child:   Padding(
     padding: const EdgeInsets.all(20.0),
@@ -199,7 +198,7 @@ Widget buildNewsItem(article, context) => InkWell(
             ),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: 20.0,
         ),
         Expanded(
@@ -219,7 +218,7 @@ Widget buildNewsItem(article, context) => InkWell(
                 ),
                 Text(
                   '${article['publishedAt']}',
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.grey,
                   ),
                 ),
@@ -237,14 +236,14 @@ Widget buildNewsArticles(list) => ConditionalBuilder(
   condition: list.length > 0,
   builder: (context) =>
       ListView.separated(
-        physics: BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         itemBuilder: (BuildContext context, int index) =>
             buildNewsItem(list[index], context),
         separatorBuilder: (BuildContext context, int index) =>
             separator(),
         itemCount: list.length,
       ),
-  fallback: (context) => Center(child: CircularProgressIndicator()),
+  fallback: (context) => const Center(child: CircularProgressIndicator()),
 );
 
 

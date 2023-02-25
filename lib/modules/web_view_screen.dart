@@ -1,52 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-
 class WebViewScreen extends StatefulWidget {
-  const WebViewScreen(article, {Key? key}) : super(key: key);
-
-  get article => article;
+  final String articleURL;
+  const WebViewScreen({Key? key, required this.articleURL}) : super(key: key);
 
   @override
-  State<WebViewScreen> createState() => _WebViewScreenState(article['url']);
+  State<WebViewScreen> createState() => _WebViewScreenState();
 }
 
 class _WebViewScreenState extends State<WebViewScreen> {
-  bool isLoading = true;
-  final String url;
-  _WebViewScreenState(this.url);
+  final _controller = WebViewController()
+    ..setJavaScriptMode(JavaScriptMode.unrestricted);
 
-  WebViewController _controller = WebViewController();
-  changeUrl(url){
-    WebViewController newController = WebViewController();
-    newController..setJavaScriptMode(JavaScriptMode.unrestricted)..setNavigationDelegate(NavigationDelegate(
-      onNavigationRequest: (NavigationRequest request){
-        return NavigationDecision.navigate;
-      },
-      onPageStarted: (url){
-        setState(() {
-          isLoading = true;
-        });
-      },
-      onPageFinished: (url){
-        setState(() {
-          isLoading = false;
-        });
-      },
-    ),)..loadRequest(Uri.parse(url));
-    if(mounted){
-      setState(() {
-        _controller = newController;
-      });
-    }
-  }
   @override
   Widget build(BuildContext context) {
+    _controller.loadRequest(Uri.parse(widget.articleURL));
     return Scaffold(
       appBar: AppBar(),
-      body: isLoading? const Center(
-        child: CircularProgressIndicator(),
-      ) : WebViewWidget(controller: _controller)
+      body: WebViewWidget(controller: _controller),
     );
   }
 }
